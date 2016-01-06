@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Alice's House</title>
+    <script src="/scripts/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/theme/alice/css/style.css">
+</head>
+<body>
+<div class="bg"></div>
+<header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="outer">
+                <div class="inner"></div>
+                <a class="title" href="<?=\Akari\system\tpl\TemplateUtil::url('/')?>">Alice's House</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">#SCREEN#</div>
+<footer>
+    <div class="container">
+        <div class="wrapper">
+            <div class="outer">
+                <div class="inner">
+                    <ul>
+                        <li>Every archive shared in this site are belong to original authors. </li>
+                        <li>If you like, please buy it.</li>
+                        <li><small>本站檔案歸原作者所有。如若喜歡作品，請購買正版支持。</small></li>
+                        <li>Every archive are copy from other site, just for fun!</li>
+                        <li><small>本站檔案皆來自互聯網，僅供學習、參考之用。</small></li>
+                        <li>Please delete archive in the 24 hours.</li>
+                        <li><small>本站分享檔案僅供學術參考，請於下載後廿四小時內刪除！</small></li>
+                        <li>Any question about illegal please contact <a href="mailto:">administrator</a></li>
+                        <li><small>如有版權問題請<a href="mailto:">邮件</a>告知，將立即刪除！</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    var offset = 1;
+    $(function () {
+        $(".post").each(function ( index, element ) {
+            $(element).addClass("style"+offset);
+            offset = ( offset < 4 ) ? offset+1 : 1;
+        });
+    });
+</script>
+</body>
+</html>

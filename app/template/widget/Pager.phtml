@@ -1,0 +1,14 @@
+<?php if($pages->needPage()): ?>
+<div class="pages">
+
+    <a href="<?=$pages->firstPage?>">&laquo;</a>
+    <?php foreach($pages->pagination as $k => $url): ?>
+        <?php if($pages->currentPage == $k): ?>
+        <b><?=$k?></b>
+        <?php else: ?>    
+        <a href="<?=$url?>"><?=$k?></a>
+        <?php endif; ?>   
+    <?php endforeach; ?>    
+    <a href="<?=$pages->lastPage?>">&raquo;</a>
+</div>
+<?php endif ?>

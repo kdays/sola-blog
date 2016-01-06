@@ -1,0 +1,116 @@
+body {
+    font-size: 12px;
+    font-family: arial, Century Gothic;
+    line-height: 160%;
+    background: #ffefef url(../img/bg.png) left top repeat-x;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    font-weight: bold;
+    color: #7c4560;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+ul, li {
+    display: block;
+    list-style: none;
+}
+
+header {
+    text-align: right;
+    margin-top: 20px;
+    padding: 20px 10px;
+    background: white;
+    border: 1px solid #FFA8BF;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: linear-gradient(to bottom, rgba(255,196,220,0.9) 0%,rgba(255,168,191,1) 100%);
+}
+
+header .description {
+    color: white;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 10px;
+    }
+}
+
+.post article img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.post {
+    margin: 10px;
+}
+
+.post + .post {
+    padding-top: 10px;
+}
+
+.post-title {
+    padding-left: 34px;
+    height: 24px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    background: url(../img/sakura.png) left center no-repeat;
+}
+
+.post-info {
+    color: #FF4D51;
+    padding-left: 34px;
+    line-height: 30px;
+}
+
+.downloads {
+    margin: 20px 0;
+}
+
+article {
+    padding: 0 34px;
+    letter-spacing: 2px;
+}
+
+footer {
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    background: white;
+    border: 1px solid #FFA8BF;
+    border-top: none;
+    color: white;
+    letter-spacing: 1px;
+    background: linear-gradient(to bottom, rgba(255,196,220,0.9) 0%,rgba(255,168,191,1) 100%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.articles {
+    background: white;
+    border: 1px solid #FFA8BF;
+}
+
+.pages {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2em;
+}
+
+.pages a {
+    display: inline-block;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>超次元のとある部屋</title>
+    <script src="/scripts/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/theme/neptune/css/style.css">
+</head>
+<body>
+<!-- 好想玩壞NepuNepu! -->
+<div class="bg"></div>
+<div class="container">
+    <header>
+        <div class="wrapper">
+            <div class="inner clearfix">
+                <div class="figure if"></div>
+                <a class="title" href="<?=\Akari\system\tpl\TemplateUtil::url('/')?>">超次元のとある部屋</a>
+            </div>
+        </div>
+    </header>
+    #SCREEN#
+    <footer>
+        <div class="wrapper">
+            <div class="inner">
+                <div class="figure dogoo"></div>
+                <small>
+                    <strong>LINKS</strong> <br />
+                    <a href="http://www.compileheart.com/neptune/">超次元ゲイムネプテューヌ</a>、
+                    <a href="http://www.compileheart.com/neptune/re-birth1/">超次元ゲイムネプテューヌ Re;Birth 1</a>、
+                    <a href="http://date-a-live-anime.com/">デート・ア・ライブ</a>、
+                    <a href="http://mediafactory.jp/">MediaFactory</a>、
+                    <a href="http://www.kadokawa.co.jp/">日本角川</a>、
+                    <a href="https://www.kadokawa.com.tw/">台灣角川</a>、
+                    <a href="http://www.kadokawa.com.hk/">香港角川</a>
+                </small>
+                <br />
+                <br />
+                <small>
+                    <strong>WARRING!!!</strong>
+                    <ul>
+                        <li>本站數據檔歸原作者所有。如若喜歡作品，請購買正版支持。</li>
+                        <li>本站數據檔皆來自互聯網，僅供學習、參考之用，版權歸原作者所有。</li>
+                        <li>本站分享數據檔僅供學術參考，請於下載後廿四小時內刪除，如引發法律問題，皆與本網站無關！</li>
+                        <li>如有版權問題請 <a href="mailto:">電郵</a> 告知，將立即刪除！</li>
+                    </ul>
+                </small>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    var bgs = ['bg1','bg2','bg3', 'bg4'];
+    var classes = [
+        'neptune', 'noire', 'blanc', 'vert', 'nepgear', 'uni', 'rom-ram'
+    ];
+    $(function () {
+        var offset = 0;
+        $(".bg").addClass(bgs[Math.floor(Math.random()*bgs.length)]);
+        $(".post .figure").each(function ( index, element ) {
+            $(element).addClass(classes[offset]);
+            offset = ( offset < classes.length-1 ) ? offset+1 : 0;
+        });
+    });
+</script>
+</body>
+</html>

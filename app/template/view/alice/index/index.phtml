@@ -1,0 +1,27 @@
+<?php
+foreach($lists as $id=>$value):
+    $class = ( isset($value['path']) ) ? "has-download" : "";
+    ?>
+    <section class="post <?=$class?>">
+        <div class="inner">
+            <div class="background"></div>
+            <div class="stamp"></div>
+            <div class="post-frame">
+                <div class="post-header">
+                    <h3 class="post-title">
+                        <a href="<?=\Akari\system\tpl\TemplateUtil::url('/post', ['id' => $id + 1])?>"><?=$value['title']?></a>
+                    </h3>
+                    <div class="post-info">
+                        <small><?=strftime("%F %A",$value['createAt'])?></small>
+                    </div>
+                </div>
+                <article class="content"><?=$value['content']?></article>
+                <?php if ( isset($value['path']) ) { ?>
+                    <a class="download" target="_blank" href="<?=$value['path']?>">Download .epub file</a>
+                <?php } ?>
+            </div>
+        </div>
+    </section>
+<?php endforeach; ?>
+
+<?=\Akari\utility\PageHelper::getInstance()->getHTML()?>

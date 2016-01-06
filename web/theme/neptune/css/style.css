@@ -1,0 +1,258 @@
+body {
+    background: rgb(29, 15, 31);
+    font-weight: lighter;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    opacity: .7;
+    background-size: cover
+}
+.bg.bg1 {
+    background: url(../img/bg1.jpg) center no-repeat;
+}
+.bg.bg2 {
+    background: url(../img/bg2.jpg) center no-repeat;
+}
+.bg.bg3 {
+    background: url(../img/bg3.jpg) center no-repeat;
+}
+.bg.bg4 {
+    background: url(../img/bg4.jpg) center no-repeat;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 700px;
+}
+header .figure {
+    float: left;
+}
+header,
+footer,
+section.post {
+    margin: 30px 20px;
+    position: relative;
+}
+header .wrapper,
+footer .wrapper,
+section.post .wrapper {
+    border: 2px solid #bc91e0;
+    box-shadow: 0 0 2px 2px black;
+    border-radius: 16px;
+    position: relative;
+}
+header .inner,
+footer .inner,
+section.post .inner {
+    min-height: 100px;
+    position: relative;
+    color: white;
+    border-radius: 14px;
+    padding: 30px 20px 50px 20px;
+    box-shadow: inset 0 0 2px 2px black;
+    text-shadow: 0 0 4px black;
+    background: rgba(40, 8, 52, 0.8);
+}
+section.post .inner {
+    min-height: 300px;
+}
+section.post.has-download {
+    padding-bottom: 100px;
+}
+section.post .logo {
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    width: 200px;
+    height: 90px;
+    background: url(../img/logo.png) center no-repeat;
+}
+section.post.has-download .logo {
+    bottom: 70px;
+}
+section.post .download {
+    text-shadow: 0 0 1px #bc91e0;
+    letter-spacing: 1px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-weight: normal;
+    right: 50px;
+    position: absolute;
+    bottom: -70px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    background: rgb(40, 8, 52);
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: inset 0 0 2px 2px rgba(255,255,255,.5);
+    border: 2px solid black;
+}
+section.post .download small {
+    font-weight: lighter;
+    letter-spacing: 0;
+}
+section.post .info {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    color: #ddd;
+    font-size: .9em;
+}
+section.post .header {
+    font-weight: lighter;
+    line-height: 40px;
+    text-align: center;
+}
+section.post .info {
+    text-align: center;
+    line-height: 40px;
+}
+section.post .figure {
+    margin-top: -50px;
+    float: right;
+    /*position: absolute;*/
+}
+.figure.if {
+    width: 137px;
+    height: 250px;
+    margin-right: -80px;
+    background: url(../img/IF.png) center no-repeat
+}
+.figure.neptune {
+    width: 137px;
+    height: 300px;
+    margin-right: -80px;
+    background: url(../img/Neptune_V2.png) center no-repeat
+}
+.figure.blanc {
+    width: 134px;
+    height: 300px;
+    margin-right: -80px;
+    background: url(../img/Blanc_V2.png) center no-repeat
+}
+.figure.nepgear {
+    width: 105px;
+    height: 300px;
+    margin-right: -70px;
+    background: url(../img/Nepgear_V2.png) center no-repeat
+}
+.figure.noire {
+    width: 108px;
+    height: 300px;
+    margin-right: -70px;
+    background: url(../img/Noire_V2.png) center no-repeat
+}
+.figure.rom-ram {
+    width: 160px;
+    height: 180px;
+    margin-right: -70px;
+    background: url(../img/Rom_Ram_V2.png) center no-repeat
+}
+.figure.uni {
+    width: 99px;
+    height: 300px;
+    margin-right: -70px;
+    background: url(../img/Uni_V2.png) center no-repeat
+}
+.figure.vert {
+    width: 165px;
+    height: 300px;
+    margin-right: -70px;
+    background: url(../img/Vert_V2.png) center no-repeat
+}
+.figure.dogoo {
+    width: 120px;
+    height: 120px;
+    margin-right: -60px;
+    background: url(../img/Dogoo.png) center no-repeat
+}
+section.post .content img {
+    border-radius: 8px;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+}
+header .inner {
+    min-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+header .title {
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 1.5em;
+    text-align: right;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 120px;
+}
+footer .inner ul {
+    margin: 5px 20px;
+}
+footer .inner {
+    min-height: 50px;
+    padding: 20px;
+    background: rgba(40, 8, 52, 0.8);
+}
+footer .dogoo {
+    float: right;
+    margin-top: -70px;
+}
+@media screen and (min-width:1000px) {
+    header {
+        margin: 0;
+        width: 280px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .container {
+        padding-left: 300px;
+    }
+}
+.pages-wrapper {
+    text-align: center;
+}
+.pages {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+.pages > * {
+    float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    background: linear-gradient(
+            to bottom,
+            rgba(40, 8, 52, .5) 0%,
+            rgba(40, 8, 52, 1) 100%);
+}
+.pages > b {
+    background: linear-gradient(
+            to top,
+            rgba(40, 8, 52, .5) 0%,
+            rgba(40, 8, 52, 1) 100%);
+}
+.pages > * + * {
+    margin-left: 10px;
+}

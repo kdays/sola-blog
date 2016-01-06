@@ -1,0 +1,23 @@
+<?=\Akari\system\tpl\TemplateUtil::load_block('adminMenu')?>
+
+
+<?=\Akari\system\tpl\TemplateUtil::form('/backend/doUpload', [], 'FILE')?>
+
+<div class="field">
+    <input type="file" name="upload" />
+</div>
+
+<div class="field">
+    <label>名称</label>
+    <input type="text" name="name" />
+</div>
+
+<div class="field">
+    <label>介绍</label>
+    <textarea name="about" rows="12" cols="60"></textarea>
+</div>
+
+<input type="submit" value="添加" />
+
+
+<?=\Akari\system\tpl\TemplateUtil::end_form()?>

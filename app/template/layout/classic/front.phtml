@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ゆいにゃ的部落格</title>
+    <script src="/scripts/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/theme/classic/css/styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="wrapper">
+            <div class="outer">
+                <div class="inner"></div>
+                <h2><a class="title" href="<?=\Akari\system\tpl\TemplateUtil::url('/')?>">ゆいにゃ的部落格</a></h2>
+                <div class="description">日語學習、輕小說翻譯分享</div>
+            </div>
+        </div>
+    </header>
+    <div class="articles">
+        #SCREEN#
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="outer">
+                <div class="inner">
+                    <ul>
+                        <li><small>本站檔案歸原作者所有。如若喜歡作品，請購買正版支持。</small></li>
+                        <li><small>如有版權問題請<a href="mailto:">邮件</a>告知，將立即刪除！</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    var offset = 1;
+    $(function () {
+        $(".post").each(function ( index, element ) {
+            $(element).addClass("style"+offset);
+            offset = ( offset < 4 ) ? offset+1 : 1;
+        });
+    });
+</script>
+</body>
+</html>

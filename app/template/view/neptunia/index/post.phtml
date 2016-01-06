@@ -1,0 +1,18 @@
+<?php
+setlocale(LC_ALL, "zh_TW.UTF-8");
+$class = ( !empty($detail['path']) ) ? "has-download" : "";
+?>
+<section class="post <?=$class?>">
+    <div class="wrapper">
+        <div class="inner">
+            <div class="figure"></div>
+            <h1 class="header"><?=$detail['title']?></h1>
+            <article class="content"><?=$detail['content']?></article>
+            <?php if ( !empty($detail['path']) ) { ?>
+                <a class="download" target="_blank" href="<?=$detail['path']?>">DOWNLOAD <small>( EPUB )</small></a>
+            <?php } ?>
+            <div class="info"><?=strftime("%F %A",$detail['createAt'])?></div>
+        </div>
+    </div>
+    <div class="logo"></div>
+</section>

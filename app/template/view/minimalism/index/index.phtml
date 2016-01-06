@@ -1,0 +1,22 @@
+<?php
+setlocale(LC_ALL, "zh_TW.UTF-8");
+foreach($lists as $id=>$value):
+    $class = ( isset($value['path']) ) ? "has-download" : "";
+    ?>
+    <section class="post <?=$class?>">
+        <div class="post-header">
+            <h3 class="post-title">
+                <a href="<?=\Akari\system\tpl\TemplateUtil::url('/post', ['id' => $id + 1])?>"><?=$value['title']?></a>
+                <small><?=strftime("%F %A",$value['createAt'])?></small>
+            </h3>
+            <?php if ( isset($value['path']) ) { ?>
+                <a class="btn download btn-primary" target="_blank" href="<?=$value['path']?>">Download EPUB</a>
+            <?php } ?>
+        </div>
+        <article class="content"><?=$value['content']?></article>
+    </section>
+<?php endforeach; ?>
+
+<div class="page-wrapper">
+    <?=\Akari\utility\PageHelper::getInstance()->getHTML()?>
+</div>

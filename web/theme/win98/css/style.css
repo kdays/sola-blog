@@ -1,0 +1,290 @@
+/**
+ * Inspired in https://github.com/contra/windows_98.css/
+ */
+body {
+    background: black;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: url(../img/bg.jpg) center no-repeat;
+    opacity: .5;
+    background-size: cover
+}
+.site-header #kaomoji {
+    height: 30px;
+    line-height: 30px;
+}
+.site-header .notice {
+    padding: 10px 0;
+    line-height: 20px;
+    border-top: 1px dashed black;
+}
+.site-header .notice ul {
+    margin: 0 20px;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 550px;
+}
+.block-centered {
+    margin: 0 auto;
+}
+.win98 {
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+    font-size: 14px;
+    font-family: Tahoma, Verdana;
+    color: #070707;
+}
+.win98 .window {
+    background: #bfbfbf;
+    border: 1px solid;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    box-shadow: 1px 1px 0 0 #000;
+    cursor: default;
+}
+.win98 .window .content {
+    padding: 7px 10px;
+}
+.win98 .window .header a {
+    color: white;
+    text-decoration: none;
+}
+.win98 .window .header {
+    margin: 2px 2px 0;
+    padding: 1px 2px;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #000080, #1084d0);
+    background: linear-gradient(to right, #000080, #1084d0);
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+}
+.win98 .window .header .icon {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 2px;
+}
+.win98 .window .header .buttons {
+    height: 14px;
+    float: right;
+}
+.win98 .window .header .buttons .btn {
+    vertical-align: text-top;
+    font-weight: bold;
+    line-height: 12px;
+    padding: 0;
+    height: 14px;
+    width: 14px;
+}
+.win98 .menu {
+    background: #bfbfbf;
+    border: 1px solid;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    box-shadow: 1px 1px 0 0 #000;
+    zoom: 1;
+    width: 195px;
+    font-size: 13px;
+    padding: 1px;
+    position: relative;
+    cursor: default;
+}
+.win98 .menu:before,
+.win98 .menu:after {
+    content: "";
+    display: table;
+}
+.win98 .menu:after {
+    clear: both;
+}
+.win98 .menu >.menu-content {
+    float: right;
+}
+.win98 .menu .menu-sidebar {
+    background: -webkit-linear-gradient(top, #000080, #1084d0);
+    background: linear-gradient(to bottom, #000080, #1084d0);
+    position: absolute;
+    width: 25px;
+    height: 100%;
+}
+.win98 .menu .menu-sidebar .headline {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: absolute;
+    bottom: 40px;
+    left: -32px;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    color: #fff;
+}
+.win98 .menu .menu-content {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: #000;
+    list-style: none;
+    margin: 2px 0;
+    width: 170px;
+}
+.win98 .menu .menu-content .divider {
+    margin: 7px 6px;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #dfdfdf;
+}
+.win98 .menu .menu-content .item {
+    padding: 10px;
+}
+.win98 .menu .menu-content .item em {
+    font-style: normal;
+    text-decoration: underline;
+}
+.win98 .menu .menu-content .item:hover {
+    color: #fff;
+    background: #000080;
+}
+.win98 .menu .menu-content .item.folder {
+    position: relative;
+}
+.win98 .menu .menu-content .item.folder:after {
+    content: '\25B6';
+    float: right;
+    font-size: 10px;
+}
+.win98 .menu .menu-content .item .icon {
+    float: left;
+    margin-right: 7px;
+    margin-top: -4px;
+}
+.win98 .menu .menu-content .item:hover .menu-content,
+.win98 .menu .menu-content .item:focus .menu-content {
+    display: block;
+}
+.win98 .menu .menu-content .menu-content {
+    background: #bfbfbf;
+    border: 1px solid;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    box-shadow: 1px 1px 0 0 #000;
+    display: none;
+    position: absolute;
+    left: 165px;
+    top: -4px;
+}
+.win98 .menu .menu-content .menu-content .item {
+    padding: 3px 10px;
+}
+.win98 .menu .menu-content .menu-content .icon {
+    width: 18px;
+    height: 18px;
+    margin-top: -2px;
+}
+.win98 .btn {
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+    font-size: 11px;
+    font-family: Tahoma, Verdana;
+    color: #070707;
+    background: #bfbfbf;
+    border: 1px solid;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    box-shadow: 1px 1px 0 0 #000;
+    text-align: center;
+    outline: none;
+    padding: 4px;
+    cursor: default;
+    display: inline-block;
+    text-decoration: none;
+}
+.win98 .btn:enabled {
+    color: #070707;
+}
+.win98 .btn:disabled {
+    color: #818181;
+    text-shadow: 1px 1px #fff;
+}
+.win98 .btn:active:enabled {
+    box-shadow: 1px 1px 0 0 #000 inset;
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-right-color: #dfdfdf;
+    border-bottom-color: #dfdfdf;
+}
+.win98 input {
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+    font-size: 11px;
+    font-family: Tahoma, Verdana;
+    color: #070707;
+    box-shadow: -1px -1px 0 0 #808080, 1px 1px 0 0 #fff;
+    border: 1px solid #000;
+    border-right-color: #dfdfdf;
+    border-bottom-color: #dfdfdf;
+}
+.win98 .resizable {
+    overflow: auto;
+    resize: both;
+}
+.window > .buttons {
+    text-align: right;
+    padding: 5px;
+}
+section {
+    margin: 10px;
+}
+.post .info {
+    line-height: 25px;
+    padding: 0 5px;
+}
+.post .content {
+    margin: 4px;
+    background: white;
+    border: 2px solid;
+    border-right-color: #dfdfdf;
+    border-bottom-color: #dfdfdf;
+    border-left-color: #666;
+    border-top-color: #666;
+    min-height: 50px;
+}
+section .content img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+.site-footer {
+    background: #dadada;
+    text-align: center;
+}
+.pages {
+    padding: 10px 0;
+    text-align: center;
+    background: #bfbfbf;
+    border: 1px solid;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    box-shadow: 1px 1px 0 0 #000;
+    margin: 0 10px;
+
+}

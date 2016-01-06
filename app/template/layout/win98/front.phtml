@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>鳥哥ノ私房</title>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/theme/win98/css/style.css">
+</head>
+<body>
+<div class="bg"></div>
+<div class="win98 container">
+    <section class="site-header window">
+        <h1 class="header"><a href="<?=\Akari\system\tpl\TemplateUtil::url('/')?>">鳥哥ノ私房</a></h1>
+        <article class="content">
+            <span id="kaomoji">(ง •̀_•́)ง </span>
+            <div class="notice">
+                <strong>【版權聲明】</strong>
+                <ul>
+                    <li>本網站資源歸版權方所有。如若喜歡作品，請購買正版支持。</li>
+                    <li>本網站資源皆來自互聯網，僅供學習、參考之用，版權歸原作者所有，如有版權問題請 <a href="mailto:">電郵</a> 告知，將立即刪除！</li>
+                    <li>本網站分享檔案僅供學術參考，請於下載後廿四小時內刪除，如有引發法律責任，皆與本網站無關！</li>
+                </ul>
+                <strong>【正版購買】</strong>
+                <ul>
+                    <li><a href="http://www.kadokawa.co.jp/">日本角川</a></li>
+                    <li><a href="https://www.kadokawa.com.tw/">台灣角川</a></li>
+                    <li><a href="http://www.kadokawa.com.hk/">香港角川</a></li>
+                    <li><a href="http://www.gztwkadokawa.com/">廣州天聞角川</a></li>
+                </ul>
+            </div>
+        </article>
+        <script>
+            var textArray = [
+                '<b>東城綾ちゃん大好きっこです</b>(*´ェ｀*)ﾎﾟｯ ハート',
+                'BOY NEXT DOOR',
+                '帕秋莉♂GO',
+                '(ง •̀_•́)ง 僕、頑張る！',
+                '(╯°Д°）╯︵ /(.□ . \\) <b>リア充死ね！</b>',
+                '_:(´ཀ`」 ∠):_ フライドチキン欲しい',
+                '...(｡•ˇ‸ˇ•｡) ... 女の子になりたい'
+            ];
+            var randomNumber = Math.floor(Math.random()*textArray.length);
+            document
+                .getElementById("kaomoji")
+                .innerHTML = textArray[randomNumber];
+        </script>
+    </section>
+    #SCREEN#
+    <section class="window site-footer">
+        <article class="content"><b>鳥哥</b>(設計) & <b>大B哥</b>(程序) & <b>DIAO爷</b>(種王)</article>
+    </section>
+</div>
+</body>
+</html>

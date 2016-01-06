@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title><?=$siteId?>~</title>
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <p>Code. <?=$siteId?></p>
+        <p>Now Date. <?=date("Ymd")?></p>
+    
+        <?=\Akari\system\tpl\TemplateUtil::form('/auth/doAuth', []) ?>
+    
+        <p>Pwd: <input type="text" name="pwd" /></p>
+        <input type="submit" value="KICK!" />
+    
+        <?=\Akari\system\tpl\TemplateUtil::end_form()?>
+    </body>
+
+</html>
+

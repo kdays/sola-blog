@@ -1,0 +1,26 @@
+<?=\Akari\system\tpl\TemplateUtil::load_block('adminMenu')?>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>名称</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <?php foreach($lists as $id => $article): ?>
+        <tr>
+            <td><?=$id + 1?></td>
+            <td><?=$article->title?></td>
+            <td>
+                <?=\Akari\system\tpl\TemplateUtil::form('/backend/remove')?>
+                    <input type="hidden" name="id" value="<?=$id + 1?>" />
+                    <button onclick="return confirm('确定删除')" type="submit">删除</button>
+                <?=\Akari\system\tpl\TemplateUtil::end_form()?>
+            </td>
+        </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>

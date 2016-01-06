@@ -1,0 +1,16 @@
+<?php
+setlocale(LC_ALL, "zh_TW.UTF-8");
+$class = ( isset($detail->path) ) ? "has-download" : "";
+?>
+<section class="post <?=$class?>">
+    <div class="post-header">
+        <h3 class="post-title">
+            <a href="<?=\Akari\system\tpl\TemplateUtil::url('/post', ['id' => $id + 1])?>"><?=$detail['title']?></a>
+            <small><?=strftime("%F %A",$detail['createAt'])?></small>
+        </h3>
+        <?php if ( isset($detail['path']) ) { ?>
+            <a class="btn download btn-primary" target="_blank" href="<?=$detail['path']?>">Download EPUB</a>
+        <?php } ?>
+    </div>
+    <article class="content"><?=$detail['content']?></article>
+</section>

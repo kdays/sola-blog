@@ -1,0 +1,25 @@
+<?php
+setlocale(LC_ALL, "zh_TW.UTF-8");
+foreach($lists as $value): ?>
+
+    <section class="post window">
+        <h1 class="header">
+            <a href="<?=\Akari\system\tpl\TemplateUtil::url('/post', ['id' => $id + 1])?>"><?=$value['title']?></a>
+            <div class="buttons">
+                <button class="btn" disabled>X</button>
+            </div>
+        </h1>
+        <div class="info"><b><?=strftime("%F (%A)",$value['createAt'])?></b></div>
+        <article class="content">
+            <?=$value['content']?>
+        </article>
+        <?php if ( isset($value->path) ) { ?>
+            <div class="buttons download">
+                <a class="btn" target="_blank" href="<?=$value['path']?>">下載EPUB</a>
+            </div>
+        <?php } ?>
+    </section>
+
+<?php endforeach; ?>
+
+<?=\Akari\utility\PageHelper::getInstance()->getHTML()?>

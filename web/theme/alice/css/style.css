@@ -1,0 +1,202 @@
+/* latin */
+@font-face {
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gloria Hallelujah'), local('GloriaHallelujah'), url(../font/GloriaHallelujah.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+footer {
+    font-family: 'Gloria Hallelujah';
+    position: relative;
+    color: #ef919a;
+    font-size: .9em;
+}
+footer small {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+    letter-spacing: 3px;
+}
+footer a {
+    color: #ef919a;
+    text-decoration: underline;
+}
+footer .wrapper {
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+footer .outer {
+    position: relative;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px 15px white;
+}
+footer ul, footer li {
+    display: block;
+    list-style: none;
+}
+header {
+    position: relative;
+}
+header .wrapper {
+    background: url(../img/HeaderBG.png);
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+header .outer {
+    position: relative;
+    padding-bottom: 50px;
+    background: white;
+    box-shadow: 0 0 15px 15px white;
+}
+header .title {
+    position: absolute;
+    right: 10px;
+    color: #ef919a;
+    letter-spacing: 2px;
+    font-size: 1.6em;
+    bottom: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+header .inner {
+    position: relative;
+    border-radius: 6px;
+    margin: 0 auto;
+    height: 350px;
+    background: white url(../img/Alice.jpg) top center no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 25px 25px white;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    opacity: .7;
+    background: url(../img/bg.jpg) center no-repeat;
+    background-size: cover
+}
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+a {
+    /* Royal Blue */
+    color: #4169e1;
+    text-decoration: none;
+}
+.post {
+    border-radius: 6px;
+    margin: 20px auto;
+    padding: 20px;
+    background: repeating-linear-gradient(
+            -45deg, #EFC1CB , #EFC1CB 30px,
+            #F2F2F2 30px, #F2F2F2 40px,
+            #C2E8F5 40px, #C2E8F5 70px,
+            #F2F2F2 70px, #F2F2F2 80px);
+}
+.post .inner {
+    padding: 20px;
+    background: white;
+    position: relative;
+}
+.post-frame {
+    padding: 30px 100px 100px;
+    position: relative;
+    min-height: 300px;
+}
+@media screen and (max-width: 768px) {
+    .post-frame {
+        padding: 0 0 100px;
+    }
+    .post-title {
+        padding-right: 80px;
+    }
+}
+.post-info {
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #ef919a;
+    font-family: 'Gloria Hallelujah';
+}
+.post article {
+    letter-spacing: 3px;
+}
+.post article img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+.post-title {
+    letter-spacing: 2px;
+    font-weight: normal;
+    padding-right: 80px;
+}
+.post .background {
+    width: 120px;
+    height: 120px;
+    opacity: .5;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    background: no-repeat center;
+    background-size: cover;
+}
+.post .stamp {
+    width: 100px;
+    height: 100px;
+    opacity: .5;
+    position: absolute;
+    z-index: 0;
+    right: -10px;
+    top: -10px;
+    background: url(../img/Stamp.png) no-repeat center;
+    background-size: cover;
+}
+.post.style1 .background {
+    background-image: url(../img/AliceCartelet1.png);
+}
+.post.style2 .background {
+    background-image: url(../img/AliceCartelet2.png);
+    left: 0;
+}
+.post.style3 .background {
+    background-image: url(../img/AliceCartelet3.png);
+}
+.post.style4 .background {
+    background-image: url(../img/AliceCartelet4.png);
+}
+.download {
+    letter-spacing: 2px;
+    padding: 8px 0;
+    color: #4169e1;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    font-family: 'Gloria Hallelujah';
+}
+.pages {
+    position: relative;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 15px 15px white;
+    font-family: 'Gloria Hallelujah';
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.2em;
+}
+.pages > * {
+    margin: 0 10px;
+    display: inline-block;
+}

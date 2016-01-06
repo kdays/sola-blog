@@ -1,0 +1,11 @@
+<?php setlocale(LC_ALL, "zh_TW.UTF-8");?>
+<section class="post window">
+    <h1 class="header"><?=$detail['title']?></h1>
+    <div class="info"><b><?=strftime("%F (%A)",$detail['createAt'])?></b></div>
+    <article class="content"><?=$detail['content']?></article>
+    <?php if ( !empty($detail['path']) ) { ?>
+        <div class="buttons download">
+            <a class="btn" target="_blank" href="<?=$detail['path']?>">下載EPUB</a>
+        </div>
+    <?php } ?>
+</section>
